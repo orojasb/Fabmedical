@@ -1,4 +1,7 @@
 const express = require('express');
+const appInsights = require("applicationinsights");
+appInsights.setup("3a322489-7ce2-45f5-8bab-650a77acb8d5");
+appInsights.start();
 const http = require('http');
 const path = require('path');
 const request = require('request');
